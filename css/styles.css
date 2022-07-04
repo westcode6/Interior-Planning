@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.67;
+}
+
+/* ==============
+    TYPOGRAPHY
+====================== */
+
+h1 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+h3 {
+    font-size: 1.3rem;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* ===============
+    Main Header Section
+====================== */
+
+.main_header_section {
+
+    background-image: url(../images/view1.avif);
+    background-position: center;
+    background-size: cover;
+}
+.main_header_overlay {
+    background-color: rgba(255,255,255,);
+}
+
+.aside_header {
+    height: inherit;
+    padding: 2em 0;
+    display: none;
+}
+
+.main_header  {
+    padding: 1.5em;
+    /* min-height: 60vh; */
+    color: white;
+
+}
+
+.brand_logo {
+    padding: .3em;
+    border-radius: 100%;
+    background: rgb(228, 255, 94);
+    color: black;
+}
+.brand_title {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: rgba(255,255,255, 1);
+}
+
+/* ======Nav
+==================*/
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1em;
+    border-bottom: 2px solid rgb(226, 226, 255);
+}
+
+.nav_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_section ul {
+    list-style: none;
+    position: relative;
+    padding: 0;
+    display: none;
+}
+
+.mobile_nav_menu {
+    font-size: 1.2rem;
+}
+
+li a {
+    text-decoration: none;
+    padding-left: .6em;
+}
+
+/* ===============
+ Hero Section
+ ===================*/
+ .hero_section {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+ }
+
+
+ .hero_title span {
+    color: rgb(228, 255, 94);;
+ }
+
+ .hero_btn {
+    background: rgb(228, 255, 94);
+    color: black;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 2em;
+ }
+
+
+ /* ==============
+ Services Section
+ =================== */
+
+ .services_section {
+    background-image: url(../images/view1.avif);
+    background-position: left;
+    background-size: cover;
+    padding: 2.5em 1.5em;
+    color: rgba(255,255,255, .96);
+ }
+
+ .service_title {
+    margin-top: 0;
+ }
+
+.service a {
+    text-decoration: none;
+    color: rgb(228, 255, 94);
+    font-size: .9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.service a:hover {
+    color: yellow;
+}
