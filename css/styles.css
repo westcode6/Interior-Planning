@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     line-height: 1.67;
 }
@@ -32,12 +32,12 @@ img {
 
 .main_header_section {
 
-    background-image: url(../images/view1.avif);
+    background-image: url(../images/white\ office.webp);
     background-position: center;
     background-size: cover;
 }
 .main_header_overlay {
-    background-color: rgba(255,255,255,);
+    background-color: rgba(255,255,255, .6);
 }
 
 .aside_header {
@@ -49,22 +49,22 @@ img {
 .main_header  {
     padding: 1.5em;
     /* min-height: 60vh; */
-    color: white;
+    color: rgb(55, 54, 54);
 
 }
 
 .brand_logo {
     padding: .3em;
     border-radius: 100%;
-    background: rgb(228, 255, 94);
-    color: black;
+    background: rgb(25, 44, 255);
+    color: white;
 }
 .brand_title {
     text-decoration: none;
     font-size: 1rem;
     font-weight: 800;
     letter-spacing: 1px;
-    color: rgba(255,255,255, 1);
+    color: rgb(34, 33, 33);
 }
 
 /* ======Nav
@@ -74,9 +74,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 1em;
-    border-bottom: 2px solid rgb(226, 226, 255);
 }
+
 
 .nav_section {
     display: flex;
@@ -110,12 +109,12 @@ li a {
 
 
  .hero_title span {
-    color: rgb(228, 255, 94);;
+    color: rgb(25, 44, 255);;
  }
 
  .hero_btn {
-    background: rgb(228, 255, 94);
-    color: black;
+    background: rgb(25, 44, 255);
+    color: white;
     padding: 1em 2em;
     border: none;
     border-radius: 20px;
@@ -133,22 +132,137 @@ li a {
     background-image: url(../images/view1.avif);
     background-position: left;
     background-size: cover;
-    padding: 2.5em 1.5em;
+    padding: 4em 1.5em;
     color: rgba(255,255,255, .96);
  }
+
 
  .service_title {
     margin-top: 0;
  }
 
+ .service_container {
+    margin-top: 3em;
+ }
+
+ .service {
+    padding: 1em;
+    border: 1px dotted rgba(0, 0, 0, 0.2);
+    margin-bottom: 2em;
+    border-radius: 1em;
+    box-shadow: -12px 2px 2px 1px rgba(0, 0, 0, 0.2);
+ }
+ .service p {
+    margin-top: 2em;
+ }
+
 .service a {
     text-decoration: none;
-    color: rgb(228, 255, 94);
+    color: yellow;
     font-size: .9rem;
     font-weight: 700;
     text-transform: uppercase;
+    padding-bottom: .3em;
+    display: inline-block;
+    margin-top: 2em;
+    margin-bottom: 1.6em;
+    border-radius: .4em;
+    border-bottom: 3px solid yellow;
+
 }
 
 .service a:hover {
     color: yellow;
+}
+
+/* =============
+Case Study Section
+==================== */
+
+/* .case_study_section {
+    display: flex;
+    flex-direction: column;
+
+} */
+
+.case_study_plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3em 1.5em;
+
+    height: 45vh;
+
+}
+
+
+.case_study_plan h2, .case_study_plan div h4 {
+    font-weight: 900;
+}
+.case_study_plan div h4 {
+    font-size: 1.1em;
+}
+
+.case_study_plan div p {
+    font-weight: 600;
+    margin: 2em 0;
+}
+
+.case_study_btn {
+    color: blue;
+    background: none;
+    padding: 1em 2em;
+    border: 2px dotted blue;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+
+.case_study_image {
+    background-image: url(../images/office.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 3em;
+    height: 45vh;
+}
+
+
+
+/* Cta Section */
+
+.cta_section {
+    background-image: url(../images/view1.avif);
+    background-position: center;
+    background-size: cover;
+    padding: 3em;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+input, ::placeholder {
+    border: none;
+    width: 100%;
+    border-bottom: 3px dotted white;
+    background: none;
+    padding: .3em .1em;
+    font-size: 1em;
+    color: white;
+    margin-top: 1em;
+}
+
+.cta_btn {
+    color: blue;
+    background: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 3em;
 }
