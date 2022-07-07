@@ -37,7 +37,7 @@ img {
 .main_header_section {
     /* background: rgb(46, 41, 41); */
 
-    background-image: url(../images/white\ office.webp), linear-gradient(to left, orange, cyan);
+    background-image: url(../images/white\ office.webp), linear-gradient(to right, orange, cyan);
     background-blend-mode: overlay;
     background-position: center;
     background-size: cover;
