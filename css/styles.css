@@ -54,7 +54,7 @@ button:hover {
 
 .main_header_section {
     /* background: rgb(46, 41, 41); */
-    min-width: 100%;
+    min-width: 100vw;
 
     background-image: url(../images/white\ office.webp), linear-gradient(to right, orange, blue);
     background-blend-mode: overlay;
