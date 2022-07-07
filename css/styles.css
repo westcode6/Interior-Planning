@@ -61,14 +61,14 @@ img {
 .brand_logo {
     padding: .3em;
     border-radius: 100%;
-    background: yellowgreen;
+    background: black;
     color: white;
 }
 .brand_title {
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 800;
-    color: rgb(91, 89, 89);
+    color: black;
     font-family: 'Montserrat', sans-serif;
 
 }
@@ -124,7 +124,7 @@ li a {
     font-size: 2.4rem;
     /* letter-spacing: -1px; */
     line-height: 1.4;
-    color: rgb(91, 89, 89);
+    color: rgb(57, 56, 56);
 }
 
 
