@@ -240,7 +240,7 @@ Case Study Section
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5em 2.5em;
+    padding: 4em 2.5em;
 }
 
 
@@ -274,6 +274,8 @@ Case Study Section
 
 .case_study_image {
     background-image: url(../images/office1.avif), linear-gradient(to  left, blue, orange);
+    background-blend-mode: multiply;
+    padding: 14em ;
     background-position: center;
     background-size: cover;
 }
