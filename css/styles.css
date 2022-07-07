@@ -98,8 +98,6 @@ button:hover {
 ==================*/
 
 .navigation {
-    margin-top: 1.6em;
-    /* max-width: 100vw; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -146,11 +144,11 @@ li a:hover, li a:focus {
     padding: 3em 0;
     display: flex;
     align-items: center;
-    text-align: center;
+    text-align: left;
  }
 
 .hero_title {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     letter-spacing: -1px;
     line-height: 1.4;
     color: rgb(26, 2, 61);
@@ -189,10 +187,6 @@ li a:hover, li a:focus {
     color: rgba(255,255,255, .96);
  }
 
- .service_header {
-    max-width: 90%;
-    margin: 2em 0;
-}
  .service_title {
     margin-top: 0;
  }
@@ -243,22 +237,11 @@ li a:hover, li a:focus {
 Case Study Section
 ==================== */
 
-.case_study_section {
-    /* background-image: url(../images/white\ office.webp), linear-gradient(to right, teal, blue);
-    background-blend-mode: overlay;
-    background-position: center;
-    background-size: cover;
-    color: #fff; */
-
-}
-
 .case_study_plan {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5em 1.5em;
-    height: 45vh;
-
+    padding: 5em 2.5em;
 }
 
 
@@ -275,6 +258,7 @@ Case Study Section
 }
 
 .case_study_btn {
+
     color: rgb(9, 15, 61);
     border: 2px solid rgb(9, 15, 61);
     box-shadow: 1px 3px 2px 1px rgb(9, 15, 61);
@@ -396,6 +380,10 @@ h1 {
         padding: 0 6em;
         display: flex;
         flex-direction: column;
+    }
+
+    .navigation {
+        margin-top: 1.6em;
     }
 
     .hero_section {
