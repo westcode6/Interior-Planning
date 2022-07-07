@@ -6,6 +6,12 @@ body {
     color: rgb(26, 2, 61);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* ==============
     TYPOGRAPHY
 ====================== */
@@ -27,7 +33,7 @@ h3 {
 }
 
 img {
-    max-width: 100%;
+    /* min-width: 100%; */
 }
 
 button {
@@ -54,7 +60,7 @@ button:hover {
 
 .main_header_section {
     /* background: rgb(46, 41, 41); */
-    min-width: 100vw;
+    /* width: 100vw; */
 
     background-image: url(../images/white\ office.webp), linear-gradient(to right, orange, blue);
     background-blend-mode: overlay;
@@ -62,7 +68,7 @@ button:hover {
     background-size: cover;
 }
 .main_header_overlay {
-    min-width: 100%;
+    /* width: 100vw; */
 
     background-color: rgba(255,255,255, .8);
 }
@@ -158,14 +164,16 @@ li a:hover, li a:focus {
     color: rgb(3, 100, 255);
  }
 
+ .hero_desc {
+    padding-top: 2em;
+    padding-bottom: 2em;
+ }
 
 
  .hero_btn {
     background: rgb(3, 100, 255);
     color: white;
-    padding: 1em 1.4em;
     border: none;
-
     box-shadow: 1px 5px 2px 1px rgb(14, 85, 200);
  }
 
@@ -191,7 +199,7 @@ li a:hover, li a:focus {
  }
 
  .service_container {
-    margin-top: 3em;
+    margin-top: 6em;
  }
 
  .service {
@@ -248,13 +256,14 @@ Case Study Section
     font-weight: 700;
     margin: 0;
 }
-.case_study_plan div h4 {
+.case_study_plan h4 {
     font-size: 1.1em;
+    margin: 2em 0;
 }
 
-.case_study_plan div p {
+.case_study_plan p {
     font-weight: 500;
-    margin: 2em 0;
+    margin-bottom: 2em;
 }
 
 .case_study_btn {
@@ -390,18 +399,18 @@ h1 {
 
     .hero_section {
         text-align: center;
-        padding: 5em 0;
+        padding: 9em 0;
     }
     .hero_title, .service_title {
-        /* margin-top: 0; */
         font-size: 3.5rem;
         line-height: 1.1;
     }
     .hero_desc {
         /* max-width: 70%; */
-       margin: auto 0;
+       /* margin: auto 0; */
+
         font-size: 1rem;
-        padding: 0;
+        padding-top: 2em;
     }
 
     .hero_btn {
@@ -414,15 +423,15 @@ h1 {
     }
 
     .services_section {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 2em 3em;
-        min-height: 90vh;
     }
 
     .service_header {
-        margin: 2em 0;
+        margin: 2em 0 5em;
     }
 
 
@@ -440,9 +449,10 @@ h1 {
     }
 
     .case_study_section {
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        min-height: 90vh;
+        min-height: 50vh;
 
     }
 .case_container {
@@ -519,6 +529,9 @@ h1 {
     .main_header_section, .main_header_overlay {
     max-height: 100vh;
 
+    }
+    .services_section {
+        max-height: 100vh;
     }
 
     .aside_header {
@@ -597,16 +610,22 @@ transform:  scale(1.5);
     }
 
     .services_section {
-       max-height: 100vh;
+        min-height: 100vh;
     }
-
     .service_header {
         width: 40%;
     }
 
     .case_study_section {
-        max-height: 100vh;
+        min-height: 100vh;
+    }
+    .case_study_plan h4, p {
+        padding-top: 1em;
     }
 
+
+    .cta_section {
+        min-height: 70vh;
+    }
 
 }
