@@ -3,6 +3,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     line-height: 1.67;
+    color: rgb(26, 2, 61);
 }
 
 /* ==============
@@ -37,7 +38,7 @@ img {
 .main_header_section {
     /* background: rgb(46, 41, 41); */
 
-    background-image: url(../images/white\ office.webp), linear-gradient(to right, orange, cyan);
+    background-image: url(../images/white\ office.webp), linear-gradient(to right, orange, blue);
     background-blend-mode: overlay;
     background-position: center;
     background-size: cover;
@@ -122,9 +123,9 @@ li a {
 
 .hero_title {
     font-size: 2.4rem;
-    /* letter-spacing: -1px; */
+    letter-spacing: -1px;
     line-height: 1.4;
-    color: black;
+    color: rgb(26, 2, 61);
 }
 
 
@@ -208,11 +209,14 @@ li a {
 Case Study Section
 ==================== */
 
-/* .case_study_section {
-    display: flex;
-    flex-direction: column;
+.case_study_section {
+    /* background-image: url(../images/white\ office.webp), linear-gradient(to right, teal, blue);
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    color: #fff; */
 
-} */
+}
 
 .case_study_plan {
     display: flex;
@@ -237,11 +241,11 @@ Case Study Section
 }
 
 .case_study_btn {
-    color: rgb(0, 33, 250);
-    background: none;
+    color: white;
+    background: black;
     padding: 1em 1.2em;
-    border: 2px solid rgb(0, 33, 250);
-    box-shadow: 1px 3px 2px 1px rgb(0, 33, 250);
+    border: 2px dotted rgb(135, 150, 244);
+    box-shadow: 1px 3px 2px 1px rgb(8, 11, 32);
     border-radius: 20px;
     font-size: 1rem;
     font-weight: 700;
@@ -260,7 +264,7 @@ Case Study Section
 
 .case_study_image {
     background-image: url(../images/she.jpg), linear-gradient(to  left, blue, orange);
-    background-blend-mode: multiply;
+    /* background-blend-mode: multiply; */
     background-position: center;
     background-size: cover;
     padding: 3em;
