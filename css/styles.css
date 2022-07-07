@@ -146,6 +146,7 @@ li a:hover, li a:focus {
     padding: 3em 0;
     display: flex;
     align-items: center;
+    text-align: center;
  }
 
 .hero_title {
