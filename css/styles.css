@@ -31,13 +31,15 @@ img {
 ====================== */
 
 .main_header_section {
+    /* background: rgb(46, 41, 41); */
 
-    background-image: url(../images/white\ office.webp);
+    background-image: url(../images/white\ office.webp), linear-gradient(to left, orange, cyan);
+    background-blend-mode: overlay;
     background-position: center;
     background-size: cover;
 }
 .main_header_overlay {
-    background-color: rgba(255,255,255, .6);
+    background-color: rgba(255,255,255, .8);
 }
 
 .aside_header {
@@ -48,7 +50,6 @@ img {
 
 .main_header  {
     padding: 1.5em;
-    /* min-height: 60vh; */
     color: rgb(55, 54, 54);
 
 }
@@ -56,21 +57,23 @@ img {
 .brand_logo {
     padding: .3em;
     border-radius: 100%;
-    background: rgb(25, 44, 255);
+    background: rgb(3, 100, 255);
     color: white;
 }
 .brand_title {
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 800;
-    letter-spacing: 1px;
-    color: rgb(34, 33, 33);
+    color: rgb(91, 89, 89);
+
 }
 
 /* ======Nav
 ==================*/
 
 .navigation {
+    margin-top: .2em;
+    /* max-width: 100vw; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -95,32 +98,50 @@ img {
 
 li a {
     text-decoration: none;
-    padding-left: .6em;
+    padding-left: 4em;
+    color: rgb(91, 89, 89);
+
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 /* ===============
  Hero Section
  ===================*/
  .hero_section {
-    height: 60vh;
+    /* height: 65vh; */
+    padding: 2.8em 0;
     display: flex;
     align-items: center;
  }
 
+.hero_title {
+    letter-spacing: -1px;
+    line-height: 1.4;
+    color: rgb(91, 89, 89);
+}
+
 
  .hero_title span {
-    color: rgb(25, 44, 255);;
+    color: rgb(3, 100, 255);
  }
 
+
+
  .hero_btn {
-    background: rgb(25, 44, 255);
+    background: rgb(3, 100, 255);
     color: white;
-    padding: 1em 2em;
+    padding: 1em 1.4em;
     border: none;
     border-radius: 20px;
     font-size: 1rem;
     font-weight: 700;
     margin-top: 2em;
+    box-shadow: 1px 5px 2px 1px rgb(14, 85, 200);
+ }
+
+ .hero_btn:hover {
+    background-color: rgb(14, 93, 218);
  }
 
 
@@ -152,6 +173,8 @@ li a {
     border-radius: 1em;
     box-shadow: -12px 2px 2px 1px rgba(0, 0, 0, 0.2);
  }
+
+
  .service p {
     margin-top: 2em;
  }
@@ -189,40 +212,49 @@ Case Study Section
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 3em 1.5em;
-
+    padding: 5em 1.5em;
     height: 45vh;
 
 }
 
 
 .case_study_plan h2, .case_study_plan div h4 {
-    font-weight: 900;
+    font-weight: 700;
 }
 .case_study_plan div h4 {
     font-size: 1.1em;
 }
 
 .case_study_plan div p {
-    font-weight: 600;
+    font-weight: 500;
     margin: 2em 0;
 }
 
 .case_study_btn {
-    color: blue;
+    color: rgb(0, 33, 250);
     background: none;
-    padding: 1em 2em;
-    border: 2px dotted blue;
+    padding: 1em 1.2em;
+    border: 2px solid rgb(0, 33, 250);
+    box-shadow: 1px 3px 2px 1px rgb(0, 33, 250);
     border-radius: 20px;
     font-size: 1rem;
     font-weight: 700;
     margin-top: 2em;
     margin-bottom: 2em;
 }
+.case_study_btn:hover {
+    color: rgb(20, 110, 255);
+
+    border: 2px solid rgb(20, 110, 255);
+
+    box-shadow: 1px 3px 2px 1px rgb(20, 110, 255);
+
+}
 
 
 .case_study_image {
-    background-image: url(../images/office.jpg);
+    background-image: url(../images/she.jpg), linear-gradient(to  left, blue, orange);
+    background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
     padding: 3em;
@@ -237,12 +269,18 @@ Case Study Section
     background-image: url(../images/view1.avif);
     background-position: center;
     background-size: cover;
-    padding: 3em;
-    height: 35vh;
+    padding: 4em 2em;
+    /* height: 35vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     color: white;
+}
+
+.cta_title {
+font-size: 2rem;
+margin-top: 0;
 }
 
 input, ::placeholder {
@@ -259,10 +297,108 @@ input, ::placeholder {
 .cta_btn {
     color: blue;
     background: white;
+    /* box-shadow: 1px 2px 2px 1px rgb(42, 61, 86); */
+
     padding: 1em 2em;
     border: none;
     border-radius: 20px;
     font-size: 1rem;
     font-weight: 700;
     margin-top: 3em;
+}
+
+.cta_btn:hover {
+    background: black;
+    color: currentColor;
+}
+
+/* ============
+Footer Section
+===================== */
+
+footer {
+    /* display: flex; */
+    padding: 4em 2em;
+    background: rgb(255, 255, 255);
+}
+
+.footer_links div {
+    padding: 1em 0;
+}
+
+
+/* ==================Media Queries================ */
+
+@media (min-width: 720px) {
+    /* body {
+        font-size: 1.3rem;
+        line-height: 1.67;
+    } */
+/* =====Typography===== */
+
+h1 {
+    font-size: 4rem;
+}
+
+    .main_header_overlay {
+        display: flex;
+    }
+
+    .aside_header {
+        display: block;
+        width: 35vw;
+    }
+
+
+    .main_header {
+        width: 100vw;
+        padding: 0 6em;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+/* justify-content: space-between; */
+    }
+
+    .hero_section {
+        width: 45vw;
+    }
+    .hero_title {
+        margin-top: 2em;
+        line-height: 1.1;
+    }
+    .hero_desc {
+        max-width: 70%;
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .hero_btn {
+        margin-top: 4em;
+    }
+
+
+    .nav_section ul {
+        display: flex
+    }
+
+    .services_section {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 3em;
+    }
+
+
+    .service_title {
+        margin: 0;
+    }
+    .service_container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4em ;
+    }
+    .service {
+        width: 25%;
+    }
 }
