@@ -33,7 +33,7 @@ h3 {
 }
 
 img {
-    /* min-width: 100%; */
+    max-width: 100%;
 }
 
 button {
@@ -60,15 +60,15 @@ button:hover {
 
 .main_header_section {
     /* background: rgb(46, 41, 41); */
-    /* width: 100vw; */
 
+width: 100vw;
     background-image: url(../images/white\ office.webp), linear-gradient(to right, orange, blue);
     background-blend-mode: overlay;
     background-position: center;
     background-size: cover;
 }
 .main_header_overlay {
-    /* width: 100vw; */
+    width: 100vw;
 
     background-color: rgba(255,255,255, .8);
 }
@@ -187,6 +187,7 @@ li a:hover, li a:focus {
  =================== */
 
  .services_section {
+    width: 100vw;
     background-image: url(../images/view1.avif);
     background-position: left;
     background-size: cover;
@@ -243,6 +244,9 @@ li a:hover, li a:focus {
 /* =============
 Case Study Section
 ==================== */
+.case_study_section {
+    width: 100vw;
+}
 
 .case_study_plan {
     display: flex;
@@ -293,6 +297,7 @@ Case Study Section
 /* Cta Section */
 
 .cta_section {
+    width: inherit;
     background-image: url(../images/view1.avif), linear-gradient(to left, gold, indigo);
     background-blend-mode: multiply;
     background-position: center;
@@ -342,7 +347,7 @@ Footer Section
 ===================== */
 
 footer {
-    /* display: flex; */
+    width: 100%;
     padding: 4em 2em;
     background: rgb(255, 255, 255);
     text-align: center;
