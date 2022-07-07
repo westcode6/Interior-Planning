@@ -140,8 +140,7 @@ li a:hover, li a:focus {
  Hero Section
  ===================*/
  .hero_section {
-    /* height: 65vh; */
-    padding: 3em 0;
+    padding: 5em 0;
     display: flex;
     align-items: center;
     text-align: left;
